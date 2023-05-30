@@ -1,4 +1,4 @@
-import pyteste
+import pytest
 from challenges.challenge_encrypt_message import encrypt_message
 
 
@@ -16,5 +16,5 @@ def test_encrypt_message():
     assert encrypt_message("", 56) == ""
 
     # Teste para a criptografia com parametros incorretos
-    with pyteste.raises(TypeError):
+    with pytest.raises(TypeError):
         encrypt_message(56, "luffy")
