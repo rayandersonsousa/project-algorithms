@@ -16,8 +16,8 @@ def string_sort(string):
 
     pivot = string[0]
 
-    smaller = "".join([char for char in string  if char < pivot])
-    same = "".join([char for char in string  if char == pivot])
-    higher = "".join([char for char in string  if char > pivot])
+    smaller = "".join([char for char in string if char < pivot])
+    same = "".join([char for char in string if char == pivot])
+    higher = "".join([char for char in string if char > pivot])
 
     return string_sort(smaller) + same + string_sort(higher)
